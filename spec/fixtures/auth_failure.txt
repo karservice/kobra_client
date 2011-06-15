@@ -1,0 +1,12 @@
+HTTP/1.1 401 Unauthorized
+Date: Wed, 15 Jun 2011 14:24:56 GMT
+Status: 401 Unauthorized
+WWW-Authenticate: Basic realm="Application"
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-cache
+X-UA-Compatible: IE=Edge,chrome=1
+X-Runtime: 0.005396
+Via: 1.1 kobra.ks.liu.se
+Transfer-Encoding: chunked
+
+HTTP Basic: Access denied.

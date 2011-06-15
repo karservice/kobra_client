@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Wed, 15 Jun 2011 09:57:52 GMT
+Status: 200 OK
+Content-Type: application/json; charset=utf-8
+ETag: "115ea511d19e8f40b9fbbb47b5a2bc0f"
+Cache-Control: max-age=0, private, must-revalidate
+Via: 1.1 kobra.ks.liu.se
+Transfer-Encoding: chunked
+
+ocked":null,"last_name":"DOE","email":"johdoXXX@student.liu.se","first_name":"JOHN","personal_number":"887711-0011","rfid_number":"9999999999","barcode_number":"888888888888888","union":"LinTek","liu_id:"johdoXXX"}
