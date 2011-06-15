@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'kobra'
+require 'kobra/client'
 
 describe Kobra::Client do
   describe '#get_student' do

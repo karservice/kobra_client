@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    kobra (0.0.1)
+    kobra_client (0.0.1)
       json_pure
       rest-client
 
@@ -32,7 +32,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  kobra!
+  kobra_client!
   rake
   rspec
   webmock
