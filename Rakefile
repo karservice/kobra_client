@@ -1,11 +1,11 @@
 require 'rake'
-require 'rspec/core/rake_task'
 
 desc "Run specs"
 task :spec do
   sh('bundle install')
   require 'rubygems'
   require 'bundler/setup'
+  require 'rspec/core/rake_task'
   RSpec::Core::RakeTask.new(:spec) do |t|
     t.rspec_opts = %w(-fs -c)
   end
