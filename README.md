@@ -1,4 +1,4 @@
-KOBRA Client
+KOBRA Ruby Client [![Tested with Travis-CI](https://secure.travis-ci.org/LinTek/kobra_client.png)](http://travis-ci.org/#!/LinTek/kobra_client)
 ============
 
 Simple client for KOBRA.
@@ -34,7 +34,7 @@ Get the username and API-key from your KOBRA account and use to authenticate the
 
     require 'kobra/client'
     kobra = Kobra::Client.new(:username => 'jage', :api_key => 'a9b8c7')
-    # => #<Kobra::Client:0x00000101175898 @base_url="http://jage:a9b8c7@kobra.ks.liu.se/">
+    # => #<Kobra::Client:0x00000101175898 @base_url="https://jage:a9b8c7@kobra.ks.liu.se/">
 
 When we have the `kobra` instance, we can use the API.
 
