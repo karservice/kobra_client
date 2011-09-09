@@ -4,7 +4,7 @@ require 'kobra/client'
 describe Kobra::Client do
   describe '#get_student' do
     it 'obtains student information by email' do
-      stub_request(:post, "http://john:a9b8c7@kobra.ks.liu.se/students/api.json").
+      stub_request(:post, "https://john:a9b8c7@kobra.ks.liu.se/students/api.json").
         with(:body => "email=johdoXXX%40student.liu.se").
         to_return(fixture('student_found.txt'))
 
@@ -23,7 +23,7 @@ describe Kobra::Client do
     end
 
     it 'fails to obtain student information by email' do
-      stub_request(:post, "http://john:a9b8c7@kobra.ks.liu.se/students/api.json").
+      stub_request(:post, "https://john:a9b8c7@kobra.ks.liu.se/students/api.json").
         with(:body => "email=johdoXXX%40student.liu.se").
         to_return(fixture('student_not_found.txt'))
 
@@ -32,7 +32,7 @@ describe Kobra::Client do
     end
 
     it 'fails to authorize' do
-      stub_request(:post, "http://john:wrong@kobra.ks.liu.se/students/api.json").
+      stub_request(:post, "https://john:wrong@kobra.ks.liu.se/students/api.json").
         with(:body => "email=johdoXXX%40student.liu.se").
         to_return(fixture('auth_failure.txt'))
 
@@ -41,7 +41,7 @@ describe Kobra::Client do
     end
 
     it 'gets garbage' do
-      stub_request(:post, "http://john:a9b8c7@kobra.ks.liu.se/students/api.json").
+      stub_request(:post, "https://john:a9b8c7@kobra.ks.liu.se/students/api.json").
         with(:body => "email=johdoXXX%40student.liu.se").
         to_return(fixture('garbage.txt'))
 
@@ -50,7 +50,7 @@ describe Kobra::Client do
     end
 
     it 'gets server error' do
-      stub_request(:post, "http://john:a9b8c7@kobra.ks.liu.se/students/api.json").
+      stub_request(:post, "https://john:a9b8c7@kobra.ks.liu.se/students/api.json").
         with(:body => "email=johdoXXX%40student.liu.se").
         to_return(fixture('server_error.txt'))
 

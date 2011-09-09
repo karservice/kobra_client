@@ -13,7 +13,7 @@ module Kobra
     # Kobra::Client.new(:domain => "kobra.ks.liu.se", :username => "john", :api_key => "a3h93hu393")
     def initialize(settings = {})
       settings[:domain] ||= 'kobra.ks.liu.se'
-      @base_url = "http://#{settings[:username]}:#{settings[:api_key]}@#{settings[:domain]}/"
+      @base_url = "https://#{settings[:username]}:#{settings[:api_key]}@#{settings[:domain]}/"
     end
 
     # get_student(:liu_id => 'johec890')
